@@ -29,11 +29,6 @@ module.exports = function(hljs) {
         begin: '%[a-zA-Z][a-zA-Z0-9]+%'
     }
 
-    var LEVEL_KEYWORD = {
-        className: 'function',
-        begin: '(LEVEL|NIVEAU)\(\)'
-    }
-
     var CPC_KEYWORDS = {
         lexemes: '[a-z]+\\/',
         keyword: "txt cls fix set couleurc colorf " +
@@ -59,7 +54,6 @@ module.exports = function(hljs) {
             END_KEYWORD,
             COND_KEYWORD,
             NUMBERS,
-            LEVEL_KEYWORD,
             VARIABLE,
             hljs.QUOTE_STRING_MODE,
             hljs.COMMENT('REM', '$', {relevance: 10}),
