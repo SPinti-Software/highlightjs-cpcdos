@@ -1,6 +1,6 @@
 /*
 Language: CPCDOSC+
-Author: SPiniti Software
+Author: SPinti Software
 Contributors: Jordan D (0v3rl0w)
 Description: Based on the CPCDOS' manual
 Website: https://cpcdos.net
