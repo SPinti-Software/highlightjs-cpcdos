@@ -1,0 +1,27 @@
+DECLARE/ COUNT(nbr) : LEVEL(5)
+DECLARER/ DECOMPTE(nbr) : NIVEAU(5)
+
+FUNCTION/ COUNT(nbr)
+    SET/ iterator = 0
+
+    :counting: 
+    IF/ "%iterator%" == "%nbr%" THEN: STOP/
+    
+    TXT/ %iterator%
+    SET/ iterator = /C(%iterator% + 1)
+    GOTO/ counting
+END/ FUNCTION
+
+FONCTION/ DECOMPTE(nbr)
+    FIX/ iterateur = %nbr%
+
+    :decomptage:
+    SI/ "%iterateur%" == "0" ALORS: STOP/
+
+    TXT/ %iterateur%
+    SET/ iterateur = /C(%iterateur% - 1)
+    ALLER/ decomptage
+FIN/ FONCTION 
+
+/F:COUNT(10)
+/F:DECOMPTE(10)
