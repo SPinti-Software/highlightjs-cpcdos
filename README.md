@@ -29,6 +29,7 @@ You can test the syntax highlighting by including both the `highlight.js` librar
 </script>
 ```
 
+Depending on the layout of your website or application, the specified paths in the code snippet may be different.
 Refer to the [`highlight.js` documentation](https://highlightjs.org/usage/) for more details on how to use the library.
 
 ### Website
