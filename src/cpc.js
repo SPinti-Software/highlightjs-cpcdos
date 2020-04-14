@@ -7,7 +7,6 @@ Website: https://cpcdos.net
 */
 
 module.exports = function(hljs) {
-   
     var COND_KEYWORD = {
         className: 'keyword',
         begin: '(sinon|else|alors|then):',
@@ -26,7 +25,7 @@ module.exports = function(hljs) {
 
     var VARIABLE = {
         className: 'variable',
-        begin: '%[a-zA-Z][a-zA-Z0-9]+%'
+        begin: '(%[a-zA-Z][a-zA-Z0-9._]+%|@#[a-zA-Z][a-zA-Z0-9._]+)'
     }
 
     var CPC_KEYWORDS = {
@@ -41,7 +40,7 @@ module.exports = function(hljs) {
                  "download serveur server client demarrer start iug " +
                  "gui message msgbox fenetre window imagebox picturebox " +
                  "bouton button textebloc textblock checkbox barreprogression " +
-                 "progressbar end",
+                 "progressbar end textebox creer create",
     };
 
     return {
